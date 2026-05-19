@@ -1,0 +1,252 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>SkyLens</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+
+    <div class="logo">
+      ✈ SkyLens
+    </div>
+
+    <ul class="nav-links">
+
+      <li>
+        <a href="#" onclick="showPage('dashboard')">
+          Dashboard
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="showPage('about')">
+          About
+        </a>
+      </li>
+
+      <li>
+        <a href="#" onclick="showPage('contact')">
+          Contact
+        </a>
+      </li>
+
+    </ul>
+
+    <div class="user-box">
+
+      <span id="usernameText">
+        Guest
+      </span>
+
+      <button id="logoutBtn">
+        Logout
+      </button>
+
+    </div>
+
+  </nav>
+
+
+
+  <!-- DASHBOARD PAGE -->
+
+  <div id="dashboardPage" class="page">
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <h1>
+        Smart Travel
+        <span>Starts Here</span>
+      </h1>
+
+      <p>
+        Real-time fare comparison,
+        trend analytics,
+        and AI-powered predictions.
+      </p>
+
+      <button id="openLogin">
+        Get Started
+      </button>
+
+    </section>
+
+
+
+    <!-- LOGIN MODAL -->
+
+    <div class="modal hidden" id="loginModal">
+
+      <div class="modal-box">
+
+        <h2>Login</h2>
+
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter Username"
+        >
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter Password"
+        >
+
+        <button id="loginBtn">
+          Sign In
+        </button>
+
+        <p id="loginMessage"></p>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- FLIGHTS -->
+
+    <section class="flight-section">
+
+      <h2>Available Flights</h2>
+
+      <div id="flightContainer"></div>
+
+    </section>
+
+
+
+    <!-- BOOKINGS -->
+
+    <section class="booking-section">
+
+      <h2>Your Bookings</h2>
+
+      <div id="bookingContainer"></div>
+
+    </section>
+
+  </div>
+
+
+
+  <!-- ABOUT PAGE -->
+
+  <div
+    id="aboutPage"
+    class="page hidden-page"
+  >
+
+    <section class="info-section">
+
+      <h2>About SkyLens</h2>
+
+      <p>
+        SkyLens is a smart airline
+        fare comparison platform that
+        helps users book flights at
+        the best prices.
+      </p>
+
+      <div class="info-grid">
+
+        <div class="info-card">
+
+          <h3>Live Pricing</h3>
+
+          <p>
+            Compare multiple airline prices instantly.
+          </p>
+
+        </div>
+
+        <div class="info-card">
+
+          <h3>AI Analytics</h3>
+
+          <p>
+            Predict future fare changes using analytics.
+          </p>
+
+        </div>
+
+        <div class="info-card">
+
+          <h3>Secure Booking</h3>
+
+          <p>
+            Save and manage bookings safely.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+
+  <!-- CONTACT PAGE -->
+
+  <div
+    id="contactPage"
+    class="page hidden-page"
+  >
+
+    <section class="info-section">
+
+      <h2>Contact Us</h2>
+
+      <div class="contact-box">
+
+        <p>
+          Email:
+          support@airanalytics.com
+        </p>
+
+        <p>
+          Phone:
+          +1 9876543210
+        </p>
+
+        <p>
+          Location:
+          New York, USA
+        </p>
+
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

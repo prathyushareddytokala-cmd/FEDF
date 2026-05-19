@@ -1,0 +1,315 @@
+/* style.css */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#020817;
+  color:white;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+  width:100%;
+  padding:20px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#020817;
+  border-bottom:1px solid #1e293b;
+}
+
+.logo{
+  font-size:28px;
+  font-weight:bold;
+  color:#7c6cff;
+}
+
+.nav-links{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  list-style:none;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#7c6cff;
+}
+
+.user-box{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.user-box span{
+  font-size:18px;
+}
+
+.user-box button{
+  padding:10px 20px;
+  border:2px solid white;
+  background:transparent;
+  color:white;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+  text-align:center;
+  padding:120px 20px;
+}
+
+.hero h1{
+  font-size:65px;
+  margin-bottom:25px;
+}
+
+.hero span{
+  color:#7c6cff;
+}
+
+.hero p{
+  font-size:22px;
+  color:#94a3b8;
+  max-width:700px;
+  margin:auto;
+  line-height:1.6;
+}
+
+.hero button{
+  margin-top:40px;
+  padding:15px 40px;
+  border:none;
+  border-radius:12px;
+  background:#5b4ff7;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+}
+
+
+/* FLIGHT SECTION */
+
+.flight-section{
+  padding:50px;
+}
+
+.flight-section h2{
+  margin-bottom:30px;
+}
+
+.flight-card{
+  background:#071226;
+  border:1px solid #1e293b;
+  padding:30px;
+  margin-bottom:25px;
+  border-radius:20px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.flight-info h3{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.flight-info p{
+  color:#94a3b8;
+  margin:5px 0;
+}
+
+.price-box{
+  text-align:right;
+}
+
+.price{
+  font-size:40px;
+  font-weight:bold;
+}
+
+.book-btn{
+  margin-top:15px;
+  padding:12px 30px;
+  background:#5b4ff7;
+  border:none;
+  border-radius:10px;
+  color:white;
+  cursor:pointer;
+}
+
+
+/* BOOKINGS */
+
+.booking-section{
+  padding:50px;
+}
+
+.booking-card{
+  background:#0f172a;
+  border:1px solid #334155;
+  padding:20px;
+  border-radius:15px;
+  margin-top:20px;
+}
+
+.delete-btn{
+  margin-top:15px;
+  padding:10px 20px;
+  background:#ef4444;
+  border:none;
+  border-radius:10px;
+  color:white;
+  cursor:pointer;
+}
+
+
+/* ABOUT + CONTACT */
+
+.info-section{
+  padding:80px 50px;
+}
+
+.info-section h2{
+  font-size:45px;
+  margin-bottom:20px;
+}
+
+.info-section p{
+  color:#94a3b8;
+  font-size:18px;
+  line-height:1.7;
+}
+
+.info-grid{
+  display:grid;
+  grid-template-columns:
+  repeat(auto-fit,minmax(250px,1fr));
+
+  gap:25px;
+  margin-top:40px;
+}
+
+.info-card{
+  background:#071226;
+  border:1px solid #1e293b;
+  padding:30px;
+  border-radius:20px;
+}
+
+.info-card h3{
+  color:#7c6cff;
+  margin-bottom:15px;
+}
+
+.contact-box{
+  margin-top:30px;
+  background:#071226;
+  border:1px solid #1e293b;
+  padding:30px;
+  border-radius:20px;
+}
+
+
+/* LOGIN MODAL */
+
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.7);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.hidden{
+  display:none;
+}
+
+.modal-box{
+  width:400px;
+  background:#08111f;
+  padding:40px;
+  border-radius:20px;
+}
+
+.modal-box h2{
+  margin-bottom:25px;
+}
+
+.modal-box input{
+  width:100%;
+  padding:15px;
+  margin-bottom:20px;
+  background:#111827;
+  border:1px solid #334155;
+  border-radius:10px;
+  color:white;
+}
+
+.modal-box button{
+  width:100%;
+  padding:15px;
+  background:#5b4ff7;
+  border:none;
+  border-radius:10px;
+  color:white;
+  cursor:pointer;
+}
+
+#loginMessage{
+  margin-top:15px;
+  color:#22c55e;
+}
+
+
+/* PAGE SWITCHING */
+
+.page{
+  display:block;
+}
+
+.hidden-page{
+  display:none;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .flight-card{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+  }
+
+}

@@ -82,6 +82,20 @@ Skylens-react/
 ├── vite.config.js
 └── README.md
 
+**System Architecture**
+
+ USER
+  ↓
+LOGIN / REGISTER
+  ↓
+HOME PAGE
+  ↓
+SEARCH FLIGHTS
+  ↓
+SELECT FLIGHT
+  ↓
+BOOK TICKET
+
 ## Future Enhancements
 
 - Real-time data integration
